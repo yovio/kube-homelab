@@ -1,0 +1,7 @@
+gitops:
+  repo: https://github.com/yovio/kube-homelab
+  revision: master
+stacks:
+  - name: bootstrap
+    namespace: argocd  # Override default value
+  #- name: system
