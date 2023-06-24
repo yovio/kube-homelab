@@ -7,7 +7,7 @@ cloudflared:
     tunnel: k3s-homelab
     ingress:
       - hostname: '*.k3s.yovi.info'
-        service: https://ingress-nginx-controller.ingress-nginx
+        service: https://ingress-nginx-controller.ingress-nginx.svc.cluster.local:443
         originRequest:
           noTLSVerify: true
       - service: http_status:404
