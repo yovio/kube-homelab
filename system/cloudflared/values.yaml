@@ -2,7 +2,7 @@ cloudflared:
   credentials:
     existingSecret: cloudflared-credentials
   config:
-    tunnel: homelab
+    tunnel: k3s-homelab
     ingress:
       - hostname: '*.k3s.yovi.info'
         service: https://ingress-nginx-controller.ingress-nginx
