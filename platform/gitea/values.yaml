@@ -22,6 +22,8 @@ gitea:
       server:
         LANDING_PAGE: explore
         ROOT_URL: https://git.k3s.yovi.info
+      service:
+        DISABLE_REGISTRATION: true
       webhook:
         ALLOWED_HOST_LIST: private
   persistence:
