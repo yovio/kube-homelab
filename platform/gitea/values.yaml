@@ -19,6 +19,9 @@ gitea:
     admin:
       existingSecret: gitea-admin-secret
     config:
+      repository.upload:
+        FILE_MAX_SIZE: 10  # In MB
+        MAX_FILES: 5
       server:
         LANDING_PAGE: explore
         ROOT_URL: https://git.k3s.yovi.info
